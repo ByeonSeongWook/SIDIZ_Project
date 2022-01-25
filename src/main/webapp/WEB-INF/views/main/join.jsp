@@ -343,103 +343,6 @@
 		<div class = "col-lg-3"></div>
 </div>
 <%-- 메인 컨텐츠 종료 --%>
-
-<%-- 이메일 인증 모달 --%>
-<div id = "emailAuthModal" class = "modal fade" role = "dialog">
-		<div class = "modal-dialog">
-				<div class = "modal-content">
-						<div class = "modal-header">														 <!-- &times; : 부트스트랩 x 아이콘 만들기 -->
-								<button type = "button" class = "close" data-dismiss = "modal">&times;</button>
-								<h4 class = "modal-title">이메일 인증</h4>
-						</div>
-						<div class = "modal-body">
-								<div class = "row">
-										<div class = "col-lg-8">
-												<input type = "email" class = "form-control" id = "user_mail_modal" placeholder = "이메일">
-										</div>
-								
-										<div class = "col-lg-4">
-												<button type = "button" class = "btn btn-success btn-block" id = "sendAuthBtn">인증번호 전송</button>
-										</div>
-								</div>
-								
-								<div class = "row" id = "authDiv" style = "margin-top : 15px; display : none;">
-										<div class = "col-lg-4">
-												<input type = "text" class = "form-control" id = "auth_num" placeholder = "인증번호">
-										</div>
-								
-										<div class = "col-lg-4">
-												<button type = "button" class = "btn btn-primary btn-block" id = "authMailBtn">인증</button>
-										</div>
-										
-										<div class = "col-lg-4">
-
-										</div>
-								</div>
-						</div>
-				</div>
-		</div>
-</div>
-<%-- 이메일 인증 모달 종료 --%>
-
-<%-- 주소 검색 모달 --%>
-<div id = "addrModal" class = "modal fade" role = "dialog">
-		<div class = "modal-dialog">
-				<div class = modal-content>
-						<div class = "modal-header">
-								<button type = "button" class = "close" data-dismiss = "modal">&times;</button>
-								<h4 class = "modal-title">주소 검색</h4>
-						</div>
-						<div class = "modal-body">
-								<div class = "row" id = "postcodify">
-								<script>
-										$('#postcodify').postcodify({
-												insertPostcode5 	: '#entry_postcode5',
-												insertAddress		: '#entry_address',
-												insertExtraInfo		: '#entry_extra_info',
-												userFullJibeon		: true,
-												mapLinkProvider	: 'google',
-												
-												ready : function() {
-													$('#postcodify div.postcode_search_status.empty').hide();
-												},
-												
-												beforeSearch 	: function() {
-													$('#entry_box').hide();
-												},
-												
-												afterSearch 		: function(selectedEntry) {
-													$('#postcodify div.postcode_search_result').remove();
-													$('#postcodify div.postcode_search_status.summary').hide();
-													$('#entry_box').show();
-													$('#entry_details').focus();
-												}
-												
-										});
-								</script>
-							</div>
-								<div>
-										<p>
-												<label for = "entry_postcode5">우편번호</label>
-												<input type = "text" class = "form-control" id = "entry_postcode5" readonly>
-										</p>
-										<p>
-												<label for = "entry_address">도로명주소</label>
-												<input type = "text" class = "form-control" id = "entry_address" readonly>
-										</p>
-										<p>
-												<label for = "entry_extra_info">지명주소</label>
-												<input type = "text" class = "form-control" id = "entry_extra_info" readonly>
-										</p>
-								</div>
-						</div>
-						<div class = "modal-footer">
-								<button type = "button" id = "getAddrBtn" class = "btn btn-primary" data-dismiss = "modal">확인</button>
-						</div>
-				</div>
-		</div>
-</div>
-<%-- 주소 검색 모달 종료--%>
   
       <!-- [하단(footer)] 부분 -->
       <footer id="footer">
@@ -557,8 +460,104 @@
             </article>
           </div>
       </footer>
+	</div>  
   
-  
+<%-- 이메일 인증 모달 --%>
+<div id = "emailAuthModal" class = "modal fade" role = "dialog">
+		<div class = "modal-dialog">
+				<div class = "modal-content">
+						<div class = "modal-header">														 <!-- &times; : 부트스트랩 x 아이콘 만들기 -->
+								<button type = "button" class = "close" data-dismiss = "modal">&times;</button>
+								<h4 class = "modal-title">이메일 인증</h4>
+						</div>
+						<div class = "modal-body">
+								<div class = "row">
+										<div class = "col-lg-8">
+												<input type = "email" class = "form-control" id = "user_mail_modal" placeholder = "이메일">
+										</div>
+								
+										<div class = "col-lg-4">
+												<button type = "button" class = "btn btn-success btn-block" id = "sendAuthBtn">인증번호 전송</button>
+										</div>
+								</div>
+								
+								<div class = "row" id = "authDiv" style = "margin-top : 15px; display : none;">
+										<div class = "col-lg-4">
+												<input type = "text" class = "form-control" id = "auth_num" placeholder = "인증번호">
+										</div>
+								
+										<div class = "col-lg-4">
+												<button type = "button" class = "btn btn-primary btn-block" id = "authMailBtn">인증</button>
+										</div>
+										
+										<div class = "col-lg-4">
+
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+<%-- 이메일 인증 모달 종료 --%>
+
+<%-- 주소 검색 모달 --%>
+<div id = "addrModal" class = "modal fade" role = "dialog">
+		<div class = "modal-dialog">
+				<div class = modal-content>
+						<div class = "modal-header">
+								<button type = "button" class = "close" data-dismiss = "modal">&times;</button>
+								<h4 class = "modal-title">주소 검색</h4>
+						</div>
+						<div class = "modal-body">
+								<div class = "row" id = "postcodify">
+								<script>
+										$('#postcodify').postcodify({
+												insertPostcode5 	: '#entry_postcode5',
+												insertAddress		: '#entry_address',
+												insertExtraInfo		: '#entry_extra_info',
+												userFullJibeon		: true,
+												mapLinkProvider	: 'google',
+												
+												ready : function() {
+													$('#postcodify div.postcode_search_status.empty').hide();
+												},
+												
+												beforeSearch 	: function() {
+													$('#entry_box').hide();
+												},
+												
+												afterSearch 		: function(selectedEntry) {
+													$('#postcodify div.postcode_search_result').remove();
+													$('#postcodify div.postcode_search_status.summary').hide();
+													$('#entry_box').show();
+													$('#entry_details').focus();
+												}
+												
+										});
+								</script>
+							</div>
+								<div>
+										<p>
+												<label for = "entry_postcode5">우편번호</label>
+												<input type = "text" class = "form-control" id = "entry_postcode5" readonly>
+										</p>
+										<p>
+												<label for = "entry_address">도로명주소</label>
+												<input type = "text" class = "form-control" id = "entry_address" readonly>
+										</p>
+										<p>
+												<label for = "entry_extra_info">지명주소</label>
+												<input type = "text" class = "form-control" id = "entry_extra_info" readonly>
+										</p>
+								</div>
+						</div>
+						<div class = "modal-footer">
+								<button type = "button" id = "getAddrBtn" class = "btn btn-primary" data-dismiss = "modal">확인</button>
+						</div>
+				</div>
+		</div>
+</div>
+<%-- 주소 검색 모달 종료--%>
     <script src="${path}/resources/js/common.js"></script><!-- 메인-공통 js -->
 
 
