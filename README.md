@@ -4,7 +4,7 @@
 
 ![sidiz_p_main.png](project_images/sidiz_p_main.png)
 
-- 의자 쇼핑몰 SIDIZ 사이트를 프론트 프로젝트로 리워크 하며 홈페이지 디자인을 좀 더 동적으로 바꾸면서 간단한 로그인, 회원가입, 장바구니, 결제창까지 넘어가는 기능을 구현했습니다.
+- 의자 쇼핑몰 SIDIZ 사이트를 프론트 프로젝트로 리워크 하며 홈페이지 디자인을 좀 더 동적으로 바꾸면서 간단한 로그인, 회원가입, 게시판, 장바구니, 비교하기, 결제창까지 넘어가는 기능을 구현했습니다.
 - 호스팅 주소 : [http://sungwook6546.cafe24.com](http://sungwook6546.cafe24.com/)
 <br/><br/><br/>
 
@@ -24,12 +24,12 @@
 
 - 이메일 인증 모달
 
-    ![address_modal.png](project_images/address_modal.png)
+    ![email_modal.png](project_images/email_modal.png)
 <br/><br/>
 
 - 주소 모달
 
-    ![email_modal.png](project_images/email_modal.png)
+    ![address_modal.png](project_images/address_modal.png)
 <br/><br/><br/>
 
 ### 장바구니 페이지
