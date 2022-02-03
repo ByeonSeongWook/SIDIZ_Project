@@ -9,6 +9,11 @@
 <br/><br/><br/>
 
 ## 2. 기능 소개
+### 네비게이션
+- 네비게이션 메뉴에서 로그인이 가능하게 했고 접근 가능한 페이지는 브랜드 스토리, 뉴스, 
+제품(T-55, T-80), 공지사항, 고객센터(카카오톡), 매장 찾기, 장바구니, 비교하기, 리뷰, 이벤트 입니다.
+    ![nav.png](project_images/nav.png)
+<br/><br/>
 
 ### 회원가입 페이지
 
@@ -33,12 +38,14 @@
 ![basket2.jpg](project_images/basket2.jpg)
 
 - 로그인 한 유저가 제품 페이지에서 제품을 장바구니에 담으면 수량과 그 제품에 대한 정보를 데이터베이스에 값을 넣도록 설계했습니다.
-- 장바구니 페이지에서는 삭제와 주문하기만 기능만 가능하게 했습니다.
+- 장바구니 페이지에서는 삭제와 주문하기 기능만 가능하게 했습니다.
 <br/><br/><br/>
 
 ### 제품 비교하기
 
 ![comparison.png](project_images/comparison.png)
+![comparison2.png](project_images/comparison2.png)
+![comparison3.png](project_images/comparison3.png)
 
 - 장바구니에 담은 제품들을 비교하기 페이지에 들어가면 그 제품에 해당하는 제품의 특징들을
 비교할 수 있습니다.
