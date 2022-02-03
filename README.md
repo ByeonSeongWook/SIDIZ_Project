@@ -1,4 +1,5 @@
 # Sidiz Team Project
+---
 
 ## 1. 프로젝트 소개
 
@@ -84,6 +85,8 @@
 
 - Back-end :
     - [ByeonSeongWook](https://github.com/ByeonSeongWook) : 장바구니, 비교하기, 로그인, 회원가입, 게시판
+  
+  
 - Front-end :
     - [ByeonSeongWook](https://github.com/ByeonSeongWook) : 제품 페이지, 리뷰 페이지, 지점 찾기 페이지, 이벤트 페이지
     - [ssb4887](https://github.com/ssb4887) : 네비게이션, 장바구니 페이지, 주문 페이지, 브랜드 스토리 페이지, 뉴스 페이지,
